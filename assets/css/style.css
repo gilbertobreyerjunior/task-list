@@ -136,3 +136,11 @@ list-style: none;
 padding: 0;
 
 }
+
+.todo li {
+
+    padding: 10px;
+    border-bottom: #CCC 1px solid;
+
+
+}
