@@ -1,0 +1,138 @@
+*{
+
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+
+background-color: rgb(251, 251, 251);
+
+}
+
+
+.content-center{
+
+width: 100%;
+max-width: 300px;
+margin: auto;
+padding: 20px;
+background-color: rgb(225, 226, 226) ;
+border-radius:15px;
+}
+
+.content-center img {
+
+width: 60%;
+
+
+} 
+
+.content-center .text-center {
+
+text-align: center;
+
+
+}
+
+.content-center form {
+
+    margin: 20px;
+
+}
+.content-center input,
+.content-center button {
+
+
+width: 100%;
+padding: 10px 5px;
+border: none;
+outline: none;
+
+}
+
+.content-center input {
+
+
+border-bottom-color:  rgb(129, 129, 129);
+border-bottom-style: solid;
+border-bottom-width: 2px;
+margin-bottom: 10px;
+}
+
+.content-center input:focus {
+
+
+border-bottom-color: rgb(125, 148, 248);
+
+}
+
+.content-center button {
+
+background-color: rgb(134, 156, 255);
+color: white;
+border-radius: 14px;
+
+
+}
+
+.content-center button:hover {
+
+
+
+    background-color:rgb(81, 93, 255);
+    cursor: pointer;
+}
+
+.content-center button:active {
+
+background-color:rgba(0, 17, 255, 0.835);
+
+}
+
+header a {
+
+
+    color: dimgray;
+    text-decoration: none;
+}
+
+header a:hover {
+
+text-decoration: underline;
+
+
+
+}
+
+header a:focus {
+
+    color:green;
+}
+
+header a:active {
+
+color:coral;
+
+}
+
+header h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 50px auto;
+}
+
+footer {
+
+font-size: 0.8em;
+text-align: center;
+
+}
+
+.todo {
+
+list-style: none;
+padding: 0;
+
+}
