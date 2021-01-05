@@ -26,6 +26,12 @@ id: 4,
 title: "Estudar Laravel"
 
 
+},
+
+{
+id: 5,
+title: "Estudar Sass"
+
 }
 
 ];
@@ -36,9 +42,26 @@ data.forEach(task => {
 let li = document.createElement('li');
 
 
-li.innerHTML = `<input type="checkbox" id="task-1">
-                <label for="task-1">HTML5</label>
+li.innerHTML = `<input type="checkbox" id="task-${task.id}">
+                <label for="task-${task.id}">${task.title}</label>
 `;
+
+
+li.querySelector('input').addEventListener('change', e => {
+
+    if (e.target.checked) {
+
+      li.classList.add('complete');
+
+    } else {
+
+        li.classList.remove('complete');
+
+    }
+
+
+});
+
 
 document.querySelector('.todo').append(li);
 
