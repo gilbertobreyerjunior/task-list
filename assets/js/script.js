@@ -1,40 +1,10 @@
-let data = [{
+let data = [];
 
 
-id: 1,
-title: "Estudar Node"
+function renderTodo() {
 
 
-
-},
-{
-
-id: 2,
-title: "Estudar HTML5"
-
-},
-{
-id: 3,
-title: "Estudar JavaScript"
-
-
-},
-
-{
-
-id: 4,
-title: "Estudar Laravel"
-
-
-},
-
-{
-id: 5,
-title: "Estudar Sass"
-
-}
-
-];
+    document.querySelector('.todo').innerHTML = '';
 
 
 data.forEach(task => {
@@ -63,10 +33,13 @@ li.querySelector('input').addEventListener('change', e => {
 });
 
 
+
+
 document.querySelector('.todo').append(li);
 
 });
 
+}
 
 // console.log(data);
 
@@ -80,7 +53,22 @@ if (e.key === 'Enter') {
 console.log(e.target.value);
 
 
+data.push({
+
+
+    id: data.length+1,
+    title: e.target.value
+
+});
+
+e.target.value = "";
+
+
+
+ renderTodo();
 }
 
 
 });
+
+renderTodo();
