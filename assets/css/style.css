@@ -169,3 +169,23 @@ width: 100%;
 padding: 10px;
 
 }
+
+.todo button {
+
+width: initial;
+color: white;
+background-color: red;
+float: right;
+min-width: 30px;
+border-radius: 5px;
+
+
+}
+
+.todo button:hover {
+
+background-color: salmon;
+
+}
+
+
