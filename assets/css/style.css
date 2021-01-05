@@ -153,3 +153,12 @@ margin-right: 10px;
 
 
 }
+
+.todo li.complete {
+
+text-decoration: line-through;
+color: brown;
+cursor:not-allowed;
+
+
+}
