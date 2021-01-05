@@ -37,7 +37,11 @@ li.querySelector('input').addEventListener('change', e => {
 li.querySelector('button').addEventListener('click', e => {
 
 
-    console.warn('Deseja realmente excluir este item?');
+
+    console.dir(e.target);
+
+    console.log(e.target.parentNode.querySelector('input').id.split('-')[1]);
+    // console.warn('Deseja realmente excluir este item?');
 
 });
 
