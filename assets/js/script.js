@@ -67,4 +67,20 @@ document.querySelector('.todo').append(li);
 
 });
 
+
 // console.log(data);
+
+document.querySelector('#new-task').addEventListener('keyup', e => {
+
+
+// console.log(e);
+
+if (e.key === 'Enter') {
+
+console.log(e.target.value);
+
+
+}
+
+
+});
