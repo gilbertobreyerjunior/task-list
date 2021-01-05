@@ -144,3 +144,12 @@ padding: 0;
 
 
 }
+
+.todo li input {
+
+width: initial;
+margin-right: 10px;
+
+
+
+}
