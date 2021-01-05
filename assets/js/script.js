@@ -31,4 +31,17 @@ title: "Estudar Laravel"
 ];
 
 
-console.log(data);
+data.forEach(task => {
+
+let li = document.createElement('li');
+
+
+li.innerHTML = `<input type="checkbox" id="task-1">
+                <label for="task-1">HTML5</label>
+`;
+
+document.querySelector('.todo').append(li);
+
+});
+
+// console.log(data);
