@@ -41,7 +41,20 @@ li.querySelector('button').addEventListener('click', e => {
     console.dir(e.target);
 
     console.log(e.target.parentNode.querySelector('input').id.split('-')[1]);
+
+    let button = e.target;
+    let li = button.parentNode;
+    let input = li.querySelector('input');
+    let id = input.id;
+    let idArray = id.split('-');
+    let todoId = idArray[1];
+
+
+data = data.filter(task => task.id !== parseInt(todoId));
+
     // console.warn('Deseja realmente excluir este item?');
+
+    renderTodo();
 
 });
 
