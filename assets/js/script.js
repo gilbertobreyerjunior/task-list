@@ -48,8 +48,10 @@ li.querySelector('button').addEventListener('click', e => {
     let id = input.id;
     let idArray = id.split('-');
     let todoId = idArray[1];
+    let title = li.querySelector('label').innerText;
 
-    if(confirm("Deseja realmente excluir a tarefa?")) {
+
+    if (confirm(`Deseja realmente excluir a tarefa ${title}?`)) {
  
 
     console.log(todoId);
@@ -57,7 +59,7 @@ li.querySelector('button').addEventListener('click', e => {
 // O task id ira comparar se é diferente o todoId que é do meu botao vermelho o x se ele for diferente nao faz nada, se ele for ele vai excluir
 
 
-data = data.filter(task => task.id !== parseInt(todoId));
+    data = data.filter(task => task.id !== parseInt(todoId));
 
     // console.warn('Deseja realmente excluir este item?');
 
